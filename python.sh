@@ -1,4 +1,6 @@
+#!/bin/sh
 # ubuntu 18.04
+
 version=3.8.5
 location=/usr/local/python
 
