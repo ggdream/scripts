@@ -9,7 +9,7 @@ sudo apt install -y zlib1g-dev gcc make build-essential libssl-dev \
 libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
 libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev openssl
 
-sudo wget https://npm.taobao.org/mirrors/python/$version/Python-$version.tgz
+sudo wget -c https://npm.taobao.org/mirrors/python/$version/Python-$version.tgz
 tar -zxvf Python-$version.tgz
 cd Python-$version/
 
