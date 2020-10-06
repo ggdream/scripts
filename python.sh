@@ -16,10 +16,10 @@ cd Python-$version/
 ./configure --prefix=$location
 sudo make -j4 && sudo make install
 
-sudo rm -rf /usr/bin/pip3 /usr/bin/python3
-sudo ln -s $location/bin/pip3 /usr/bin/pip3
-sudo ln -s $location/bin/python3 /usr/bin/python3
+# sudo rm -rf /usr/bin/pip3 /usr/bin/python3
+sudo ln -s $location/bin/pip3 /usr/bin/pip3.8
+sudo ln -s $location/bin/python3 /usr/bin/python3.8
 
-sudo cp /usr/lib/python3/dist-packages/lsb_release.py $location/lib/python3.8/
-sudo pip3 config set global.index-url https://mirrors.aliyun.com/pypi/simple
-sudo python3 -m pip install --upgrade pip
+# sudo cp /usr/lib/python3/dist-packages/lsb_release.py $location/lib/python3.8/
+sudo pip3.8 config set global.index-url https://mirrors.aliyun.com/pypi/simple
+sudo python3.8 -m pip install --upgrade pip
