@@ -28,3 +28,5 @@ sudo echo "export PATH=$PATH:$location/node/bin" >> $target
 . $target
 
 npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+node -v
