@@ -23,3 +23,5 @@ sudo systemctl restart docker
 # docker-compose
 sudo apt install -y python3-pip
 sudo pip3 install -i https://mirrors.aliyun.com/pypi/simple docker-compose
+
+docker -v && docker-compose -v
