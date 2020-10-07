@@ -26,7 +26,7 @@ sudo echo "export PUB_CACHE=$location/dart-sdk/cache" >> $target
 sudo echo "export PATH=$PATH:$location/dart-sdk/bin" >> $target
 
 . $target
-dart -v
+dart --version
 
 
 # sudo apt-get update
