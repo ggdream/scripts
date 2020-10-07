@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 default_version=1.22.0
 default_location=/usr/local
@@ -27,7 +27,7 @@ sudo echo "export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn" >> $ta
 sudo echo "export ANDROID_HOME=$location/android-sdk-linux" >> $target
 sudo echo "export ANDROID_PATH=$location/android-sdk-linux/tools:$location/android-sdk-linux/platform-tools" >> $target
 sudo echo "export PATH=$PATH:$location/flutter/bin:$location/flutter/bin/cache/dart-sdk/bin:$location/android-sdk-linux/tools:$location/android-sdk-linux/platform-tools" >> $target
-source $target
+. $target
 
 android list sdk --all
 android update -a -u -t 2,8,53
