@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 default_version=2.10.1
 default_location=/usr/local
@@ -25,7 +25,7 @@ sudo echo "export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn" >> $ta
 sudo echo "export PUB_CACHE=$location/dart-sdk/cache" >> $target
 sudo echo "export PATH=$PATH:$location/dart-sdk/bin" >> $target
 
-source $target
+. $target
 dart -v
 
 
