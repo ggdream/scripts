@@ -19,7 +19,7 @@ fi
 
 sudo wget -c https://npm.taobao.org/mirrors/node/v$version/node-v$version-linux-x64.tar.gz
 sudo tar -zxvf node-v$version-linux-x64.tar.gz
-sudo mv node-v$version-linux-x64.tar.gz $location/node
+sudo mv node-v$version-linux-x64 $location/node
 
 sudo echo "export NODE_HOME=$location/node" >> $target
 sudo echo "export NODE_PATH=$location/node/lib/node_modules" >> $target
