@@ -7,7 +7,7 @@ sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-p
 
 sudo curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable"
-sudo apt-get -y update && sudo apt-get -y install docker-ce
+sudo apt-get -y update && sudo apt-get install docker-ce -y
 
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
