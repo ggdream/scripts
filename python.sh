@@ -37,3 +37,5 @@ echo "export PATH=$PATH:$location/bin" >> $target
 # sudo cp /usr/lib/python3/dist-packages/lsb_release.py $location/lib/python3.8/
 sudo pip3.8 config set global.index-url https://mirrors.aliyun.com/pypi/simple
 sudo python3.8 -m pip install --upgrade pip
+
+python3.8 -V
