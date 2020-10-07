@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 default_version=12.18.4
 default_location=/usr/local
