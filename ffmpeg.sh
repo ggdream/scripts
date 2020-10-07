@@ -3,6 +3,7 @@
 
 default_version=n4.3.1
 default_location=/usr/local/ffmpeg
+target=/etc/profile
 
 
 if [ -n "$2" ] ;then
@@ -41,4 +42,6 @@ cd FFmpeg/
 sudo make -j4 && sudo make install
 
 sudo echo $location/lib/ >> /etc/ld.so.conf
+sudo echo $location/bin >> $target
+
 # https://video.pearvideo.com/mp4/adshort/20201006/cont-1700555-15417447_adpkg-ad_hd.mp4
