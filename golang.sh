@@ -24,5 +24,7 @@ sudo echo "export GOROOT=$location/go" >> $target
 sudo echo "export GOPATH=$location/go/code" >> $target
 sudo echo "export PATH=$PATH:$location/go/bin:$location/go/code/bin" >> $target
 
+source $target
+
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://goproxy.cn
