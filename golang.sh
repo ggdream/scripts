@@ -28,3 +28,5 @@ sudo echo "export PATH=$PATH:$location/go/bin:$location/go/code/bin" >> $target
 
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://goproxy.cn
+
+go version
