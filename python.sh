@@ -33,7 +33,7 @@ sudo make -j4 && sudo make install
 sudo ln -s $location/bin/pip3 /usr/bin/pip3.8
 sudo ln -s $location/bin/python3 /usr/bin/python3.8
 
-echo "export PATH=$PATH:$location/bin" >> $target
+# echo "export PATH=$PATH:$location/bin" >> $target
 . $target
 
 # sudo cp /usr/lib/python3/dist-packages/lsb_release.py $location/lib/python3.8/
