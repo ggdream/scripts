@@ -30,7 +30,7 @@ cd nginx-$version/
 --conf-path=/etc/nginx/nginx.conf \
 --error-log-path=/var/log/nginx/error.log \
 --http-log-path=/var/log/nginx/access.log \
---pid-path=/var/run/nginx/nginx.pid 
+--pid-path=/var/run/nginx/nginx.pid  \
 --lock-path=/var/lock/nginx.lock
 sudo make -j4 && sudo make install
 
