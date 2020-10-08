@@ -2,7 +2,7 @@
 # ubuntu 18.04
 
 default_version=n4.3.1
-default_location=/usr/local/ffmpeg
+default_location=/usr
 target=/etc/profile
 
 
@@ -41,7 +41,7 @@ cd FFmpeg/
 --enable-pthreads
 sudo make -j4 && sudo make install
 
-sudo echo $location/lib/ >> /etc/ld.so.conf
-sudo echo $location/bin >> $target
+# sudo echo $location/lib/ >> /etc/ld.so.conf
+# sudo echo $location/bin >> $target
 
 # https://video.pearvideo.com/mp4/adshort/20201006/cont-1700555-15417447_adpkg-ad_hd.mp4
