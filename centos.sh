@@ -24,6 +24,15 @@ yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/d
 yum makecache fast
 yum install -y docker-ce docker-ce-cli containerd.io
 
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+ "registry-mirrors": ["https://bmtb46e4.mirror.aliyuncs.com"]
+}
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
 
 curl -L "https://github.91chifun.workers.dev//https://github.com/docker/compose/releases/download/$version/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
