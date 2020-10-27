@@ -1,7 +1,7 @@
 #!/bin/sh
 # ubuntu 18.04
 
-default_version=3.8.5
+default_version=3.8.6
 default_location=/usr/local/python
 target=/etc/profile
 
