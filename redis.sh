@@ -1,6 +1,6 @@
 #!/bin/sh
 
-default_version=6.0.8
+default_version=6.0.9
 default_location=/usr/local
 target=/etc/profile
 
