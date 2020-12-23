@@ -1,5 +1,6 @@
 #!/bin/sh
 
+
 NDK=/usr/local/file/android-ndk-r21b
 TOOLCHAIN=$NDK/toolchains/llvm/prebuilt/linux-x86_64
 API=29

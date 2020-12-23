@@ -5,7 +5,6 @@ MAIN=main.go
 TARGET=dist
 
 
-
 export GOOS=android
 export CGO_ENABLED=1
 

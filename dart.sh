@@ -1,31 +1,20 @@
-#!/bin/sh
-
-default_version=2.10.1
-default_location=/usr/local
-target=/etc/profile
+#!/bin/bash
 
 
-if [ -n "$2" ] ;then
-    version=$1
-    location=$2
-elif [ -n "$1" ] ;then
-    version=$1
-    location=$default_location
-else
-    echo "\e[31;40;1mYou have not entered any parameters, v$default_version will be selected by default.\e[0m"
-    version=$default_version
-    location=$default_location
-fi
+version=2.10.4
+location=/usr/local
+target=$HOME/.bashrc
 
-sudo wget -c https://storage.googleapis.com/dart-archive/channels/stable/release/$version/sdk/dartsdk-linux-x64-release.zip
+wget -c https://storage.googleapis.com/dart-archive/channels/stable/release/$version/sdk/dartsdk-linux-x64-release.zip
 sudo unzip -d $location dartsdk-linux-x64-release.zip
 
-sudo echo "export PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $target
-sudo echo "export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn" >> $target
-sudo echo "export PUB_CACHE=$location/dart-sdk/cache" >> $target
-sudo echo "export PATH=$PATH:$location/dart-sdk/bin" >> $target
+echo "export PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $target
+echo "export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn" >> $target
+echo "export PUB_CACHE=$location/dart-sdk/cache" >> $target
+echo "export PATH=$PATH:$location/dart-sdk/bin" >> $target
+source $target
 
-. $target
+
 dart --version
 
 
