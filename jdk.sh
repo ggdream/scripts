@@ -12,7 +12,7 @@ sudo mv ${location}/jdk1.8.0_202 ${location}/jdk
 
 echo "export JAVA_HOME=${location}/jdk" >> $target
 echo "export JRE_HOME=${location}/jdk/jre" >> $target
-echo "export PATH=$PATH:${location}/jdk/bin:${location}/jdk/jre/bin" >> $target
+echo "export PATH=\$PATH:\${JAVA_HOME}/bin:\${JRE_HOME}/bin" >> $target
 source $target
 
 
