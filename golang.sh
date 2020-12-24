@@ -10,6 +10,7 @@ sudo tar -zxvf go$version.linux-amd64.tar.gz -C $location
 
 echo "export GOROOT=$location/go" >> $target
 echo "export GOPATH=$location/go/code" >> $target
+source $target
 echo "export PATH=$PATH:$GOROOT/bin:$GOPATH/bin" >> $target
 source $target
 
