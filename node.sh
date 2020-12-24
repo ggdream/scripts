@@ -11,8 +11,7 @@ sudo mv node-v$version-linux-x64 $location/node
 
 echo "export NODE_HOME=$location/node" >> $target
 echo "export NODE_PATH=$location/node/lib/node_modules" >> $target
-source $target
-echo "export PATH=$PATH:${NODE_HOME}/bin" >> $target
+echo "export PATH=$PATH:$location/node/bin" >> $target
 source $target
 
 
