@@ -12,7 +12,11 @@ sudo apt-get -y update && sudo apt-get install docker-ce -y
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
- "registry-mirrors": ["https://bmtb46e4.mirror.aliyuncs.com"]
+ "registry-mirrors": [
+     "https://reg-mirror.qiniu.com",
+     "https://hub-mirror.c.163.com",
+     "https://bmtb46e4.mirror.aliyuncs.com"
+     ]
 }
 EOF
 
