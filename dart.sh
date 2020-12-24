@@ -6,6 +6,8 @@ location=/usr/local
 target=$HOME/.bashrc
 
 wget -c https://storage.googleapis.com/dart-archive/channels/stable/release/$version/sdk/dartsdk-linux-x64-release.zip
+
+sudo apt install unzip -y
 sudo unzip -d $location dartsdk-linux-x64-release.zip
 
 echo "export PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $target
