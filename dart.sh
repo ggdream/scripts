@@ -14,7 +14,7 @@ echo "export PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $target
 echo "export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn" >> $target
 echo "export PUB_CACHE=$location/dart-sdk/cache" >> $target
 echo "export PATH=$PATH:$location/dart-sdk/bin" >> $target
-source $target
+source $HOME/.bashrc
 
 
 dart --version

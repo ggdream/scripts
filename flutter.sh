@@ -15,7 +15,7 @@ echo "export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn" >> $target
 # echo "export ANDROID_HOME=$location/android-sdk-linux" >> $target
 # echo "export ANDROID_PATH=$location/android-sdk-linux/tools:$location/android-sdk-linux/platform-tools" >> $target
 echo "export PATH=$PATH:$location/flutter/bin:$location/flutter/bin/cache/dart-sdk/bin" >> $target
-source $target
+source $HOME/.bashrc
 
 # android list sdk --all
 # android update -a -u -t 2,8,53
