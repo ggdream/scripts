@@ -27,7 +27,7 @@ sudo systemctl restart docker
 # docker-compose
 # sudo apt install -y python3-pip
 # sudo pip3 install -i https://mirrors.aliyun.com/pypi/simple docker-compose
-version=1.27.4
+version=1.28.0
 curl -L "https://github.91chifun.workers.dev//https://github.com/docker/compose/releases/download/$version/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 
