@@ -31,5 +31,11 @@ version=1.28.0
 sudo curl -L "https://github.91chifun.workers.dev//https://github.com/docker/compose/releases/download/$version/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
+# free sudo
+sudo groupadd docker
+sudo gpasswd -a ${USER} docker
+sudo systemctl restart docker
+newgrp - docker
+
 
 docker -v && docker-compose -v
