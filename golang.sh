@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-version=1.15.6
+version=1.16.6
 location=/usr/local
 target=$HOME/.bashrc
 
