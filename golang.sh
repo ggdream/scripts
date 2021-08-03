@@ -8,9 +8,9 @@ target=$HOME/.bashrc
 wget -c https://golang.google.cn/dl/go$version.linux-amd64.tar.gz
 sudo tar -zxvf go$version.linux-amd64.tar.gz -C $location
 
-echo "export GOROOT=$location/go" >> $target
-echo "export GOPATH=$location/go/code" >> $target
-echo "export PATH=\$PATH:\$GOROOT/bin:\$GOPATH/bin" >> $target
+sudo echo "export GOROOT=$location/go" >> $target
+sudo echo "export GOPATH=$location/go/code" >> $target
+sudo echo "export PATH=\$PATH:\$GOROOT/bin:\$GOPATH/bin" >> $target
 source $HOME/.bashrc
 
 go env -w GO111MODULE=auto
